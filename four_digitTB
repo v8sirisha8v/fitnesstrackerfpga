@@ -1,0 +1,66 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 04/08/2025 11:43:29 AM
+// Design Name: 
+// Module Name: four_digitTB
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module four_digitTB;
+    reg clk, reset, dot;
+    reg [15:0] bcd;
+    wire [7:1] C;
+    wire DP;
+    wire [3:0] AN;
+    wire [10:0] counter;
+    
+    bcd_4digit dut (
+        .clk(clk),
+        .reset(reset),
+        .dot(dot),
+        .bcd(bcd),
+        .C(C),
+        .DP(DP),
+        .AN(AN),
+        .counter(counter)
+    );
+    
+    always #5 clk = ~clk;
+    
+    initial begin
+        clk = 0;
+        reset = 1;
+        bcd = 16'd0;
+        dot = 0;
+        
+        #10;
+        
+        reset = 0;
+        bcd = 16'd9999;
+        dot = 0;
+        
+        #500;
+        
+        bcd = 16'd95;
+        dot = 1;
+        
+        #500;
+        
+        $finish;
+    
+    end
+endmodule
