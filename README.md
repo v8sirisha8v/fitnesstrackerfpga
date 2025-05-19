@@ -28,5 +28,5 @@ The project consists of the following Verilog modules:
 Successfully deployed the design onto the Nexys A7-100T board with clean user interaction, accurate metric tracking, and smooth real-time visual output. The project highlights structured digital design and integration of multiple subsystems on FPGA.
 
 ## **Demo**
- [Watch Explanation Video](https://drive.google.com/file/d/1wQbRALDL-USc6IeVVzssgsk52rIvq4YW/view?usp=sharing)  
-[Watch Demo Video on FPGA Board](https://drive.google.com/file/d/1wQbRALDL-USc6IeVVzssgsk52rIvq4YW/view?usp=sharing)
+[Watch Explanation Video](https://drive.google.com/file/d/1wQbRALDL-USc6IeVVzssgsk52rIvq4YW/view?usp=sharing)  
+[Watch Demo Video on FPGA Board](https://drive.google.com/file/d/1LRJpKC5sD3PDdUrl2OUXAxU2-l5X5bom/view?usp=sharing)
